@@ -24,9 +24,9 @@ function Header() {
             src="https://links.papareact.com/f90"
             width={150}
             height={40}
-            objectFit="contain"
             className="cursor-pointer"
-            alt=''
+            style={{ objectFit: "contain", height: "40px" }}
+            alt='image1'
           />
         </div>
 

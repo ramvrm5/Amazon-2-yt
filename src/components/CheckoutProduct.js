@@ -27,8 +27,8 @@ const CheckoutProduct = ({ id, title, price, rating, description, category, imag
                 src={image}
                 width={200}
                 height={200}
-                objectFit="contain"
-                alt=''
+                alt='image3'
+                style={{ objectFit: "contain", height: "200px" }}
             />
 
             {/* Middle */}
