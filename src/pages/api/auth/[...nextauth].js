@@ -11,4 +11,5 @@ export default NextAuth({
         }),
         // ...add more providers here
     ],
+    secret: 'IamVeryHandsomeDeveloper'
 })
