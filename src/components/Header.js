@@ -1,17 +1,11 @@
 import React from 'react';
-
 import Image from 'next/image';
-
 import {
   MenuIcon, SearchIcon, ShoppingCartIcon
 } from "@heroicons/react/outline";
-
 import { signIn, signOut, useSession } from "next-auth/react";
-
 import { useRouter } from "next/router";
-
 import { useSelector } from 'react-redux';
-
 import { selectItems } from '../slices/basketSlice';
 
 function Header() {
