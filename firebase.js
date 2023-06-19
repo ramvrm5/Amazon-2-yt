@@ -1,4 +1,5 @@
-import firebase from "firebase";
+import { getApp, getApps, initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore'
 
 
 const firebaseConfig = {
@@ -10,3 +11,14 @@ const firebaseConfig = {
     messagingSenderId: "25430860223",
 };
 
+// Check if Firebase app is already initialized
+// const app = getApp();
+// if (!app) {
+//   // Initialize Firebase app
+//   initializeApp(firebaseConfig);
+// }
+
+const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export default db;
